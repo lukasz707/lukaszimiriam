@@ -11,4 +11,4 @@ const pool = mysql.createPool({
 });
 
 module.exports = pool;
-//KOMENTARZ 7
+//KOMENTARZ 777
