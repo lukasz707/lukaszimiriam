@@ -1,5 +1,7 @@
 const db = require('../db');
-
+afterAll(async () => {
+  await pool.end();
+});
 test('DB connection test', async () => {
   const conn = await db.getConnection();
   expect(conn).toBeDefined();
