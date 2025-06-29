@@ -54,7 +54,7 @@ jobs:
           DB_NAME: test_db
 
       - name: Build Docker image
-        run: docker build -t app_web:latest ./app
+        run: docker build -t app_web:latest .
 
       - name: Setup SSH key
         run: |
