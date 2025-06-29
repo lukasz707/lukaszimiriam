@@ -46,7 +46,7 @@ jobs:
           done
 
       - name: Run tests
-        run: npm test
+        run: cd app && npm test
         env:
           DB_HOST: db
           DB_USER: root
